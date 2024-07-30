@@ -1,0 +1,103 @@
+body {
+    background-image: url(Landingpagebackground.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+li,
+a,
+button {
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.submenu {
+    float: left;
+    overflow: hidden;
+}
+
+.submenu {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.submenu:hover {
+    background-color: red;
+}
+
+
+.submenu,
+li {
+    float: left;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.navbar a:hover,
+.submenu:hover {
+    background-color: red;
+}
+
+.submenu:hover {
+    display: block;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+.submenu-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu-content a:hover {
+    background-color: #eee;
+    color: black;
+
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+/* li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 25px;
+
+} */
